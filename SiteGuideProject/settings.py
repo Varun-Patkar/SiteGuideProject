@@ -25,7 +25,7 @@ MONGODB_USERNAME = os.environ.get("MONGODB_USERNAME")
 MONGODB_PASS = os.environ.get("MONGODB_PASS")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['site-guide-project.herokuapp.com']
 
