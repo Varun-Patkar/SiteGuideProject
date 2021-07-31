@@ -1,0 +1,18 @@
+{%extends "crud_patients/base.html"%}
+{%block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-12 pt-5">
+            <h2 class="pt-5">{{patient.get_full_name}}</h2>
+            <p>
+            Gender : {{patient.gender}} <br>
+            Age : {{patient.age}}<br>
+            Disease : {{patient.disease}}<br>
+            Doctor Name : {{patient.doctor}}<br>
+            Doctor Fees : Rs.{{patient.doctor_fees}}<br>   
+            Started medication on : {{patient.start_med}}
+            </p>
+        </div>
+    </div>
+</div>
+{%endblock%}

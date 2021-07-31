@@ -1,0 +1,14 @@
+{% extends 'crud_patients/base.html' %}
+{% block content %}
+
+<div class="container pt-5">
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        <input class="btn btn-sm btn-danger" type="submit" value="Confirm">
+        <a href="{% url 'crud_patients:patients'%}" class="btn btn-sm btn-primary" role="button"
+            aria-pressed="true">Cancel</a>
+    </form>
+</div>
+
+{% endblock %}

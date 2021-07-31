@@ -1,0 +1,20 @@
+{%extends 'crud_patients/base.html'%}
+{%block content%}
+<div class="album py-5 bg-light">
+    <div class="container">
+        <h1>Patient List</h1>
+        <div class="row">
+            {%for patient in patients_list%}
+            <div class="col-md-4">
+                <div class="card mb4 box shadow">
+                    <div class="card-body">
+                        <h4><a class="text-dark" href="{{ patient.get_absolute_url }}">{{patient.get_full_name}}</a></h4>
+                    </div>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+{%endblock%}
