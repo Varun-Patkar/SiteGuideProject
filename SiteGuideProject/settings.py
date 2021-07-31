@@ -27,7 +27,7 @@ MONGODB_PASS = os.environ.get("MONGODB_PASS")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['site-guide-project.herokuapp.com/']
+ALLOWED_HOSTS = ['site-guide-project.herokuapp.com']
 
 
 # Application definition
